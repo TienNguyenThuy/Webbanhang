@@ -1,0 +1,133 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px grey;
+  .logo {
+    width: 120px;
+    height: 65px;
+    margin: 0 60px;
+    flex: 1;
+  }
+  .form {
+    width: 400px;
+    height: 40px;
+    margin: 0 100px;
+    padding-bottom: 10px;
+    flex: 1;
+    .input {
+      height: 50px;
+      width: 50%;
+      border-radius: 4px;
+      font-size: 20px;
+      background-color: white;
+    }
+    .iconSearch {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 41%;
+      top:3%;
+      font-size: 30px;
+      background: transparent;
+      border: none;
+    }
+  }
+  .iconShop {
+    font-size: 40px;
+    position: absolute;
+    right: 350px;
+    padding-top: 20px;
+    color: #585858;
+  }
+  .login {
+    position: absolute;
+    right: 200px;
+    padding-top: 10px;
+    .loginButton {
+      width: 100px;
+      height: 50px;
+      border: 2px solid #363636;
+      font-size: 20px;
+      border-radius: 10px;
+      font-family: cursive;
+    }
+    .loginButton:hover {
+      background-color: #660000;
+      color: white;
+    }
+  }
+  .signUp {
+    position: absolute;
+    right: 95px;
+    padding-top: 10px;
+    .signUpButton {
+      width: 100px;
+      height: 50px;
+      border: 2px solid #363636;
+      font-size: 20px;
+      border-radius: 10px;
+      font-family: cursive;
+      background-color: #ff3300;
+    }
+    .signUpButton:hover {
+      background-color: #660000;
+      color: white;
+    }
+  }
+  .categories {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    .font {
+      font-size: 17px;
+      margin-left: 10px;
+      align-items: center;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      padding-top: 20px;
+      align-items: center;
+      .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        padding-top: 10px;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+    }
+  }
+}
